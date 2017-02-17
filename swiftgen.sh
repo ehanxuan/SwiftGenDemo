@@ -18,6 +18,10 @@ GEN_ASSETS_DST=$RESOURCES_DIR/Assets.swift
 GEN_COLORS_SRC=$RESOURCES_DIR/Colors.txt
 GEN_COLORS_DST=$RESOURCES_DIR/Colors.swift
 
+# Fonts
+GEN_FONTS_SRC=$RESOURCES_DIR/Fonts
+GEN_FONTS_DST=$RESOURCES_DIR/Fonts.swift
+
 echo "##### Check swiftgen installation #####"
 if which swiftgen >/dev/null; then
   echo "swiftgen is installed."
@@ -30,3 +34,4 @@ echo "##### Generate #####"
 swiftgen strings -t swift3 --output $GEN_STRINGS_DST $GEN_STRINGS_SRC
 swiftgen images -t swift3 --output $GEN_ASSETS_DST $GEN_ASSETS_SRC
 swiftgen colors -t swift3 --output $GEN_COLORS_DST $GEN_COLORS_SRC
+swiftgen fonts -t swift3 --output $GEN_FONTS_DST $GEN_FONTS_SRC

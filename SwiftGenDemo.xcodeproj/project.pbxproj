@@ -16,6 +16,18 @@
 		10E29C7A1E56A0F00055E228 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C791E56A0F00055E228 /* Localizable.strings */; };
 		10E29C7C1E56A4A40055E228 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29C7B1E56A4A40055E228 /* Localizable.swift */; };
 		10E29C7E1E56ABB50055E228 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29C7D1E56ABB50055E228 /* Assets.swift */; };
+		10E29C8C1E570A620055E228 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29C7F1E570A620055E228 /* Colors.swift */; };
+		10E29C8D1E570A620055E228 /* colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C801E570A620055E228 /* colors.txt */; };
+		10E29C8E1E570A620055E228 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C821E570A620055E228 /* Avenir.ttc */; };
+		10E29C8F1E570A620055E228 /* SFNSDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C831E570A620055E228 /* SFNSDisplay-Black.otf */; };
+		10E29C901E570A620055E228 /* SFNSDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C841E570A620055E228 /* SFNSDisplay-Bold.otf */; };
+		10E29C911E570A620055E228 /* SFNSDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C851E570A620055E228 /* SFNSDisplay-Heavy.otf */; };
+		10E29C971E570A620055E228 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29C8B1E570A620055E228 /* Fonts.swift */; };
+		10E29C9D1E571FB00055E228 /* SFNSDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C981E571FB00055E228 /* SFNSDisplay-Regular.otf */; };
+		10E29C9E1E571FB00055E228 /* SFNSText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C991E571FB00055E228 /* SFNSText-Bold.otf */; };
+		10E29C9F1E571FB00055E228 /* SFNSText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C9A1E571FB00055E228 /* SFNSText-Heavy.otf */; };
+		10E29CA01E571FB00055E228 /* SFNSText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C9B1E571FB00055E228 /* SFNSText-Regular.otf */; };
+		10E29CA11E571FB00055E228 /* ZapfDingbats.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10E29C9C1E571FB00055E228 /* ZapfDingbats.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +54,18 @@
 		10E29C791E56A0F00055E228 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		10E29C7B1E56A4A40055E228 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		10E29C7D1E56ABB50055E228 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		10E29C7F1E570A620055E228 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		10E29C801E570A620055E228 /* colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colors.txt; sourceTree = "<group>"; };
+		10E29C821E570A620055E228 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
+		10E29C831E570A620055E228 /* SFNSDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplay-Black.otf"; sourceTree = "<group>"; };
+		10E29C841E570A620055E228 /* SFNSDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplay-Bold.otf"; sourceTree = "<group>"; };
+		10E29C851E570A620055E228 /* SFNSDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		10E29C8B1E570A620055E228 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		10E29C981E571FB00055E228 /* SFNSDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplay-Regular.otf"; sourceTree = "<group>"; };
+		10E29C991E571FB00055E228 /* SFNSText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSText-Bold.otf"; sourceTree = "<group>"; };
+		10E29C9A1E571FB00055E228 /* SFNSText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSText-Heavy.otf"; sourceTree = "<group>"; };
+		10E29C9B1E571FB00055E228 /* SFNSText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSText-Regular.otf"; sourceTree = "<group>"; };
+		10E29C9C1E571FB00055E228 /* ZapfDingbats.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZapfDingbats.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +129,14 @@
 			isa = PBXGroup;
 			children = (
 				10E29C7D1E56ABB50055E228 /* Assets.swift */,
-				10E29C7B1E56A4A40055E228 /* Localizable.swift */,
 				10E29C6C1E56A0130055E228 /* Assets.xcassets */,
+				10E29C7F1E570A620055E228 /* Colors.swift */,
+				10E29C801E570A620055E228 /* colors.txt */,
+				10E29C811E570A620055E228 /* Fonts */,
+				10E29C8B1E570A620055E228 /* Fonts.swift */,
 				10E29C6D1E56A0130055E228 /* LaunchScreen.storyboard */,
 				10E29C791E56A0F00055E228 /* Localizable.strings */,
+				10E29C7B1E56A4A40055E228 /* Localizable.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -119,6 +147,22 @@
 				10E29C721E56A0130055E228 /* AppDelegate.swift */,
 			);
 			path = "Shared Objects";
+			sourceTree = "<group>";
+		};
+		10E29C811E570A620055E228 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				10E29C821E570A620055E228 /* Avenir.ttc */,
+				10E29C831E570A620055E228 /* SFNSDisplay-Black.otf */,
+				10E29C841E570A620055E228 /* SFNSDisplay-Bold.otf */,
+				10E29C851E570A620055E228 /* SFNSDisplay-Heavy.otf */,
+				10E29C981E571FB00055E228 /* SFNSDisplay-Regular.otf */,
+				10E29C991E571FB00055E228 /* SFNSText-Bold.otf */,
+				10E29C9A1E571FB00055E228 /* SFNSText-Heavy.otf */,
+				10E29C9B1E571FB00055E228 /* SFNSText-Regular.otf */,
+				10E29C9C1E571FB00055E228 /* ZapfDingbats.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +250,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E29C8D1E570A620055E228 /* colors.txt in Resources */,
+				10E29C901E570A620055E228 /* SFNSDisplay-Bold.otf in Resources */,
+				10E29C8F1E570A620055E228 /* SFNSDisplay-Black.otf in Resources */,
 				10E29C731E56A0130055E228 /* Assets.xcassets in Resources */,
+				10E29C8E1E570A620055E228 /* Avenir.ttc in Resources */,
+				10E29C9D1E571FB00055E228 /* SFNSDisplay-Regular.otf in Resources */,
+				10E29C9E1E571FB00055E228 /* SFNSText-Bold.otf in Resources */,
+				10E29C911E570A620055E228 /* SFNSDisplay-Heavy.otf in Resources */,
 				10E29C751E56A0130055E228 /* Main.storyboard in Resources */,
 				10E29C7A1E56A0F00055E228 /* Localizable.strings in Resources */,
+				10E29C9F1E571FB00055E228 /* SFNSText-Heavy.otf in Resources */,
 				10E29C741E56A0130055E228 /* LaunchScreen.storyboard in Resources */,
+				10E29CA01E571FB00055E228 /* SFNSText-Regular.otf in Resources */,
+				10E29CA11E571FB00055E228 /* ZapfDingbats.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E29C761E56A0130055E228 /* AppDelegate.swift in Sources */,
+				10E29C8C1E570A620055E228 /* Colors.swift in Sources */,
 				10E29C7C1E56A4A40055E228 /* Localizable.swift in Sources */,
 				10E29C7E1E56ABB50055E228 /* Assets.swift in Sources */,
+				10E29C971E570A620055E228 /* Fonts.swift in Sources */,
 				10C3DF171E569E2C00AAD6D6 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

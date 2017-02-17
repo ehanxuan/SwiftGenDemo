@@ -7,7 +7,7 @@ import Foundation
 
 // swiftlint:disable type_body_length
 enum L10n {
-  /// SwiftGen 文字使用例
+  /// SwiftGen 使用例
   case welcome
 }
 // swiftlint:enable type_body_length

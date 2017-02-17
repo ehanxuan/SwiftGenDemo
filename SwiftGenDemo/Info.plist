@@ -41,5 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Fonts provided by application </key>
+	<array>
+		<string>Avenir.ttc</string>
+		<string>SFNSDisplay-Black.otf</string>
+	</array>
 </dict>
 </plist>
