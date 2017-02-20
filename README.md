@@ -91,50 +91,71 @@ Fonts.swift
 ~~~~
 
 5. 调用
-    1. string 使用例
+5_1. string 使用例
 原来的写法
+~~~~
 welcomeLabel.text = NSLocalizedString("welcome", nil)
+~~~~
 
 现在的写法
+~~~~
 welcomeLabel.text = tr(.welcome)
+~~~~
 
 优点：
 - 不需要硬编码"welcome"
 
-    2. color 使用例
+5_2. color 使用例
 原来的写法
+~~~~
 welcomeLabel.textColor = UIColor(red: 100/255.0, green: 150/255.0, blue: 200/255.0, alpha: 1)
+~~~~
+~~~~
 welcomeLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)         // 339666，自定义颜色不能正确显示；不能定义通用颜色
-
+~~~~
 现在的写法
+~~~~
 welcomeLabel.textColor = UIColor(named: .articleBody)
+~~~~
 
 优点：
 - 可以优雅地使用通用 color
 
-    3. 自定义 fonts 使用例
+5_3. 自定义 fonts 使用例
 原来的写法
+~~~~
 welcomeLabel.font = UIFont(name: "Avenir-Heavy", size: 17)
+~~~~
 
 现在的写法
+~~~~
 welcomeLabel.font = UIFont(font: FontFamily.Avenir.heavy, size: 17)
+~~~~
 
 优点：
 - 不需要硬编码"Avenir-Heavy"
 
-    4. 图片使用例
+5_4. 图片使用例
 原来的写法
+~~~~
 sampleImage.image = #imageLiteral(resourceName: "SampleImage”)
+~~~~
+~~~~
 sampleImage.image = UIImage(named: “sampleImage")
+~~~~
 
 现在的写法
+~~~~
 sampleImage.image = UIImage(asset: .sampleImage);
+~~~~
+~~~~
 sampleImage.image = Asset.sampleImage.image
+~~~~
 
 缺点：
 - xCode 8 的 image Literal 写法，编码时能提示 image 名，且可以有 preview 功能，故推荐使用原生的 image literal 写法
 
-    5. 由于当前没有引用过 UIStoryboards 或 NSStoryboards，暂时不作探讨。如有需要，可直接找官网说明。
+5_5. 由于当前没有引用过 UIStoryboards 或 NSStoryboards，暂时不作探讨。如有需要，可直接找官网说明。
 https://github.com/SwiftGen/SwiftGen#uistoryboard
 
 
