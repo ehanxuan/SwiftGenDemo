@@ -106,7 +106,7 @@ Fonts.swift
     welcomeLabel.textColor = UIColor(red: 100/255.0, green: 150/255.0, blue: 200/255.0, alpha: 1)
     ```
     ```swift
-    welcomeLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)         // 339666，自定义颜色不能正确显示；不能定义通用颜色
+    welcomeLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)    // 339666，自定义颜色不能正确显示；不能定义通用颜色
     ```
 
     - 现在的写法  
