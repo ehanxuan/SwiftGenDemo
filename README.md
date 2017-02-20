@@ -27,13 +27,13 @@ https://github.com/SwiftGen/SwiftGen
 - Fonts.（推荐）
 
 ### 使用方法
-1. 安装
-~~~~
+**安装**
+```sh
 $ brew install swiftgen
-~~~~
+```
 
-2. 在项目根目录下创建 swiftgen.sh 文件
-~~~~
+**在项目根目录下创建 swiftgen.sh 文件**
+```sh
 #!/bin/sh
 #===============================================================================
 # SwiftGen Batch Script
@@ -71,17 +71,12 @@ swiftgen strings -t swift3 --output $GEN_STRINGS_DST $GEN_STRINGS_SRC
 swiftgen images -t swift3 --output $GEN_ASSETS_DST $GEN_ASSETS_SRC
 swiftgen colors -t swift3 --output $GEN_COLORS_DST $GEN_COLORS_SRC
 swiftgen fonts -t swift3 --output $GEN_FONTS_DST $GEN_FONTS_SRC
-~~~~
+```
 
-3. 代码结构
-~~~~
-(B.D.T.)
-~~~~
-
-4. 运行 swiftgen.sh 文件
-~~~~
+**运行 swiftgen.sh 文件**
+```sh
 ./swiftgen.sh
-~~~~
+```
 运行完后，会生成以下文件
 ~~~~
 Localizable.swift
@@ -90,73 +85,74 @@ Colors.swift
 Fonts.swift
 ~~~~
 
-5. 调用
-5_1. string 使用例
-原来的写法
-~~~~
-welcomeLabel.text = NSLocalizedString("welcome", nil)
-~~~~
+**调用**
+- string 使用例  
+    - 原来的写法  
+    ```swift
+    welcomeLabel.text = NSLocalizedString("welcome", nil)
+    ```
 
-现在的写法
-~~~~
-welcomeLabel.text = tr(.welcome)
-~~~~
+    - 现在的写法  
+    ```swift
+    welcomeLabel.text = tr(.welcome)
+    ```
 
-优点：
-- 不需要硬编码"welcome"
+    - 优点  
+        - 不需要硬编码"welcome"
 
-5_2. color 使用例
-原来的写法
-~~~~
-welcomeLabel.textColor = UIColor(red: 100/255.0, green: 150/255.0, blue: 200/255.0, alpha: 1)
-~~~~
-~~~~
-welcomeLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)         // 339666，自定义颜色不能正确显示；不能定义通用颜色
-~~~~
-现在的写法
-~~~~
-welcomeLabel.textColor = UIColor(named: .articleBody)
-~~~~
+- color 使用例  
+    - 原来的写法  
+    ```swift
+    welcomeLabel.textColor = UIColor(red: 100/255.0, green: 150/255.0, blue: 200/255.0, alpha: 1)
+    ```
+    ```swift
+    welcomeLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)         // 339666，自定义颜色不能正确显示；不能定义通用颜色
+    ```
 
-优点：
-- 可以优雅地使用通用 color
+    - 现在的写法  
+    ```swift
+    welcomeLabel.textColor = UIColor(named: .articleBody)
+    ```
 
-5_3. 自定义 fonts 使用例
-原来的写法
-~~~~
-welcomeLabel.font = UIFont(name: "Avenir-Heavy", size: 17)
-~~~~
+    - 优点  
+        - 可以优雅地使用通用 color        
 
-现在的写法
-~~~~
-welcomeLabel.font = UIFont(font: FontFamily.Avenir.heavy, size: 17)
-~~~~
+- 自定义 fonts 使用例  
+    - 原来的写法  
+    ```swift
+    welcomeLabel.font = UIFont(name: "Avenir-Heavy", size: 17)
+    ```
 
-优点：
-- 不需要硬编码"Avenir-Heavy"
+    - 现在的写法  
+    ```swift
+    welcomeLabel.font = UIFont(font: FontFamily.Avenir.heavy, size: 17)
+    ```
 
-5_4. 图片使用例
-原来的写法
-~~~~
-sampleImage.image = #imageLiteral(resourceName: "SampleImage”)
-~~~~
-~~~~
-sampleImage.image = UIImage(named: “sampleImage")
-~~~~
+    - 优点  
+        - 不需要硬编码"Avenir-Heavy"
 
-现在的写法
-~~~~
-sampleImage.image = UIImage(asset: .sampleImage);
-~~~~
-~~~~
-sampleImage.image = Asset.sampleImage.image
-~~~~
+- 图片使用例  
+    - 原来的写法  
+    ```swift
+    sampleImage.image = #imageLiteral(resourceName: "SampleImage”)
+    ```
+    ```swift
+    sampleImage.image = UIImage(named: “sampleImage")
+    ```
 
-缺点：
-- xCode 8 的 image Literal 写法，编码时能提示 image 名，且可以有 preview 功能，故推荐使用原生的 image literal 写法
+    - 现在的写法  
+    ```swift
+    sampleImage.image = UIImage(asset: .sampleImage);
+    ```
+    ```swift
+    sampleImage.image = Asset.sampleImage.image
+    ```
 
-5_5. 由于当前没有引用过 UIStoryboards 或 NSStoryboards，暂时不作探讨。如有需要，可直接找官网说明。
-https://github.com/SwiftGen/SwiftGen#uistoryboard
+    - 缺点  
+        - xCode 8 的 image Literal 写法，编码时能提示 image 名，且可以有 preview 功能，故推荐使用原生的 image literal 写法
+
+- 由于当前没有引用过 UIStoryboards 或 NSStoryboards，暂时不作探讨。如有需要，可直接找官网说明。
+    https://github.com/SwiftGen/SwiftGen#uistoryboard
 
 
 ### 应用例
